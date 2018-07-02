@@ -14,7 +14,10 @@ eval {
 
 note <<'EOD';
 
-The following tests check manipulation of the canned statuses
+The following tests check manipulation of the canned statuses. They
+really pertain to this distribution, but they are duplicated with
+Astro::Coord::ECI::TLE to ensure the support provided by that module
+does not break.
 EOD
 
 cmp_ok elements( Astro::Coord::ECI::TLE->status( 'show' ) ), '==', 97,

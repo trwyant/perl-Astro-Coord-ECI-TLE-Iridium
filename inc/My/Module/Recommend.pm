@@ -5,35 +5,9 @@ use warnings;
 
 use Carp;
 use Config;
-use My::Module::Recommend::Any qw{ __any };
 use My::Module::Recommend::All qw{ __all };
 
-my %misbehaving_os = map { $_ => 1 } qw{ MSWin32 cygwin };
-
 my @optionals = (
-    __any( 'Astro::SIMBAD::Client'	=> <<'EOD' ),
-      This module is required for the 'satpass' script's 'sky lookup'
-      command, but is otherwise unused by this package. If you do not
-      intend to use this functionality, this module is not needed.
-EOD
-    __any( [ 'Astro::SpaceTrack' => 0.052 ]	=> <<'EOD' ),
-      This module is required for the 'satpass' script's 'st' command,
-      but is otherwise unused by this package. If you do not intend to
-      use this functionality, this module is not needed.
-EOD
-    __any( 'Date::Manip'		=> <<'EOD'
-      This module is not required, but the alternative to installing it
-      is to specify times to the 'satpass' script in ISO 8601 format.
-      See 'SPECIFYING TIMES' in the 'satpass' documentation for the
-      details.
-EOD
-	. ( $] < 5.010 ? <<'EOD' : '' ) ),
-
-      Unfortunately, the current Date::Manip requires Perl 5.10. Since
-      you are running an earlier Perl, you can try installing Date-Manip
-      5.54, which is the most recent version that does _not_ require
-      Perl 5.10.
-EOD
     __all( 'DateTime', 'DateTime::TimeZone'	=> <<'EOD' ),
       If you set the 'zone' attribute of Astro::Coord::ECI::TLE::Iridium
       to a zone name, these modules will be used to determine if a flare
@@ -41,49 +15,6 @@ EOD
       be set to the zone name in the hope that the localtime() built-in
       will respond to this. If the 'zone' attribute is undef (the
       default) or a numeric offset from GMT, this module is not used.
-EOD
-    __any( 'Geo::Coder::OSM'			=> <<'EOD' ),
-      This module is required for the 'satpass' script's 'geocode'
-      command, but is otherwise unused by this package. If you do not
-      intend to use this functionality, this module is not needed.
-EOD
-    __any( 'Geo::WebService::Elevation::USGS'	=> <<'EOD' ),
-      This module is required for the 'satpass' script's 'height'
-      command, but is otherwise unused by this package. If you do not
-      intend to use this functionality, this module is not needed.
-EOD
-    ( ( $] >= 5.008 && $Config{useperlio} ) ? () :
-    __any( 'IO::String'				=> <<'EOD' ) ),
-      You appear to have a version of Perl earlier than 5.8, or one
-      which is not configured to use perlio. Under this version of Perl
-      IO::String is required by the 'satpass' script if you wish to pass
-      commands on the command line, or to define macros. If you do not
-      intend to do these things, this module is not needed.
-EOD
-    __any( 'JSON'				=> <<'EOD' ),
-      This module is required for Astro::Coord::ECI::TLE to parse
-      orbital data in JSON format. If you do not intend to do this, this
-      module is not needed.
-EOD
-    ( $] >= 5.012 ? () :
-    __any( 'Time::y2038'			=> <<'EOD'
-      This module is not required, but if installed allows you to do
-      computations for times outside the usual range of system epoch to
-      system epoch + 0x7FFFFFFF seconds.
-EOD
-	. ( $misbehaving_os{$^O} ? <<"EOD" : '' )
-
-      Unfortunately, Time::y2038 has been known to misbehave when
-      running under $^O, so you may be better off just accepting the
-      restricted time range.
-EOD
-	. ( ( $Config{use64bitint} || $Config{use64bitall} ) ? <<'EOD' : '' ) ) ),
-	    and $recommendation .= <<'EOD';
-
-      Since your Perl appears to support 64-bit integers, you may well
-      not need Time::y2038 to do computations for times outside the
-      so-called 'usual range.' It will be used, though, if it is
-      available.
 EOD
 );
 

@@ -19,6 +19,9 @@ sub new {
 
 sub build_requires {
     return +{
+	'Config'	=> 0,
+	'Data::Dumper'	=> 0,
+	'Exporter'	=> 5.64,
 	'Test::More'	=> 0.88,	# Because of done_testing().
     };
 }
@@ -46,8 +49,8 @@ sub meta_merge {
 	    license	=> 'http://dev.perl.org/licenses/',
 	    repository	=> {
 		type	=> 'git',
-		url	=> 'git://github.com/trwyant/perl-Astro-Coord-ECI.git',
-		web	=> 'https://github.com/trwyant/perl-Astro-Coord-ECI',
+		url	=> 'git://github.com/trwyant/perl-Astro-Coord-ECI-TLE-Iridium.git',
+		web	=> 'https://github.com/trwyant/perl-Astro-Coord-ECI-TLE-Iridium',
 	    },
 	},
 	@extra,
@@ -70,13 +73,12 @@ sub requires {
 ##  if ( ! $self->distribution() ) {
 ##  }
     return +{
+	'Astro::Coord::ECI::Sun'	=> 0,
+	'Astro::Coord::ECI::TLE'	=> 0,
+	'Astro::Coord::ECI::Utils'	=> 0,
 	'Carp'		=> 0,
-	'Data::Dumper'	=> 0,
-	'Exporter'	=> 5.64,
-	'IO::File'	=> 0,
 	'POSIX'		=> 0,
 	'Scalar::Util'	=> 0,
-	'Storable'	=> 0,
 	'base'		=> 0,
 	'constant'	=> 0,
 	'strict'	=> 0,
@@ -96,7 +98,7 @@ __END__
 
 =head1 NAME
 
-My::Module::Meta - Information needed to build My::Module
+My::Module::Meta - Information needed to build Astro::Coord::ECI::TLE::Iridium
 
 =head1 SYNOPSIS
 
@@ -109,9 +111,10 @@ My::Module::Meta - Information needed to build My::Module
 
 =head1 DETAILS
 
-This module centralizes information needed to build C<My::Module>. It
-is private to the C<My::Module> package, and may be changed or
-retracted without notice.
+This module centralizes information needed to build
+C<Astro-Coord-ECI-TLE-Iridium>. It is private to the
+C<Astro-Coord-ECI-TLE-Iridium> package, and may be changed or retracted
+without notice.
 
 =head1 METHODS
 
@@ -129,9 +132,9 @@ This method instantiates the class.
  print Dump( $meta->build_requires() );
 
 This method computes and returns a reference to a hash describing the
-modules required to build the C<My::Module> package, suitable for
-use in a F<Build.PL> C<build_requires> key, or a F<Makefile.PL>
-C<< {META_MERGE}->{build_requires} >> key.
+modules required to build the C<Astro-Coord-ECI-TLE-Iridium> package,
+suitable for use in a F<Build.PL> C<build_requires> key, or a
+F<Makefile.PL> C<< {META_MERGE}->{build_requires} >> key.
 
 =head2 distribution
 
@@ -172,7 +175,7 @@ reference). If it can not load the required module, it returns nothing.
  print Dump( $meta->requires() );
 
 This method computes and returns a reference to a hash describing
-the modules required to run the C<My::Module>
+the modules required to run the C<Astro-Coord-ECI-TLE-Iridium>
 package, suitable for use in a F<Build.PL> C<requires> key, or a
 F<Makefile.PL> C<PREREQ_PM> key. Any additional arguments will be
 appended to the generated hash. In addition, unless
