@@ -1,2 +1,7 @@
-0.099_01	2018-06-29	T. R. Wyant
-    Pulled out of Astro-satpass (Astro::Coord::ECI) distribution.
+0.099_01	2018-07-04	T. R. Wyant
+    Canned status update:
+
+    - Iridium 65 failed
+    - Iridium 67 decayed
+
+    Pull out Astro::Coord::ECI::TLE::Iridium as separate distribution.
