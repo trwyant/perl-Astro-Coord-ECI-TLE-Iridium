@@ -73,9 +73,9 @@ sub requires {
 ##  if ( ! $self->distribution() ) {
 ##  }
     return +{
-	'Astro::Coord::ECI::Sun'	=> 0,
-	'Astro::Coord::ECI::TLE'	=> 0,
-	'Astro::Coord::ECI::Utils'	=> 0,
+	'Astro::Coord::ECI::Sun'	=> 0.091,
+	'Astro::Coord::ECI::TLE'	=> 0.091,
+	'Astro::Coord::ECI::Utils'	=> 0.091,
 	'Carp'		=> 0,
 	'POSIX'		=> 0,
 	'Scalar::Util'	=> 0,

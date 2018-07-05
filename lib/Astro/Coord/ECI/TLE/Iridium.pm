@@ -135,12 +135,12 @@ package Astro::Coord::ECI::TLE::Iridium;
 use strict;
 use warnings;
 
-use base qw{Astro::Coord::ECI::TLE};
+use base qw{ Astro::Coord::ECI::TLE };
 
 our $VERSION = '0.099_01';
 
 use Astro::Coord::ECI::Sun;
-use Astro::Coord::ECI::Utils qw{:all};
+use Astro::Coord::ECI::Utils 0.091 qw{:all};
 use Carp;
 use POSIX qw{floor strftime};	# For debugging
 
