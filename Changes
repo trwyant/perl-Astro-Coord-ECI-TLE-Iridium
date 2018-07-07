@@ -1,3 +1,8 @@
+0.099_03	2018-07-07	T. R. Wyant
+    Canned status update:
+
+    - Iridium 98 spare
+
 0.099_02	2018-07-05	T. R. Wyant
     Update dependency on Astro::Coord::ECI to 0.091. The actual need is
     for the *_REF manifest constants in ::Utils.
