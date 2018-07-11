@@ -139,7 +139,6 @@ use base qw{ Astro::Coord::ECI::TLE };
 
 our $VERSION = '0.099_03';
 
-use Astro::Coord::ECI::Sun;
 use Astro::Coord::ECI::Utils 0.091 qw{:all};
 use Carp;
 use POSIX qw{floor strftime};	# For debugging
@@ -250,12 +249,6 @@ foreach my $mma (0 .. 2) {
 
 my @inverse_transform_vector =
     map {scalar _invert_matrix_list (@$_)} @transform_vector;
-
-
-#	Various things we will share.
-
-my $sun;	# For an Astro::Coord::ECI::Sun object.
-
 
 =item $tle->after_reblessing (\%attribs);
 
@@ -551,7 +544,7 @@ eod
     my $illum = $self->get ('illum');
     my $horizon = $self->get ('horizon');
     my $twilight = $self->get ('twilight');
-    $sun ||= Astro::Coord::ECI::Sun->new ();
+    my $sun = $self->get( 'sun' );
 
     my %want = (
 	am => $self->get ('am'),
@@ -1063,7 +1056,7 @@ my $height = ($station->geodetic)[2];
 
 #	And any odds and ends we might need.
 
-$sun ||= Astro::Coord::ECI::Sun->new ();
+my $sun = $self->get( 'sun' );
 my $twilight = $self->get ('twilight');
 my $atm_extinct = $self->get ('extinction');
 
