@@ -1,27 +1,11 @@
-0.099_05	2018-07-13	T. R. Wyant
-    Canned status update:
-
-    - Iridium 80 spare (partial failure)
-
-0.099_04	2018-07-11	T. R. Wyant
-    Canned status update:
-
-    - Iridium 75 decayed
-    - Iridium 98 failed
-
-0.099_03	2018-07-07	T. R. Wyant
-    Canned status update:
-
-    - Iridium 98 spare
-
-0.099_02	2018-07-05	T. R. Wyant
-    Update dependency on Astro::Coord::ECI to 0.091. The actual need is
-    for the *_REF manifest constants in ::Utils.
-
-0.099_01	2018-07-04	T. R. Wyant
+0.100		2018-07-15	T. R. Wyant
     Canned status update:
 
     - Iridium 65 failed
     - Iridium 67 decayed
+    - Iridium 75 decayed
+    - Iridium 80 spare (partial failure)
+    - Iridium 98 failed
+    - Iridium 98 spare
 
     Pull out Astro::Coord::ECI::TLE::Iridium as separate distribution.
