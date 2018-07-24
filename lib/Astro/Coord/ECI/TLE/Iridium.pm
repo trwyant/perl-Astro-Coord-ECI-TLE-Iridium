@@ -432,7 +432,7 @@ is also taken into account for the non-specular flares.
 
 Atmospheric extinction is calculated according to the article by Daniel
 W.  Green in the July 1992 issue of "International Comet Quarterly", and
-available at L<http://www.cfa.harvard.edu/icq/ICQExtinct.html>. Because
+available at L<http://www.icq.eps.harvard.edu/ICQExtinct.html>. Because
 Heavens Above does not display flares dimmer than a certain magnitude
 (-6 for day flares, and apparently 0 for night flares), it may not
 display a flare that this code predicts. I have no information how
