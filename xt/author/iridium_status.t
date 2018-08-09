@@ -31,7 +31,7 @@ my $ua = LWP::UserAgent->new(
 #    ssl_opts	=> { verify_hostname	=> 0 },	# Necessary until Perl recognizes McCants' cert.
 );
 
-my $asof = time_gm( 0, 0, 22, 6, 7, 2018 );
+my $asof = time_gm( 0, 0, 11, 9, 7, 2018 );
 
 foreach (
 	["T. S. Kelso's Iridium list",
@@ -86,12 +86,12 @@ foreach (
 25285IRIDIUM 62 [B]
 25286IRIDIUM 63 [-]
 25287IRIDIUM 64 [B]
-25289IRIDIUM 66 [P]
+25289IRIDIUM 66 [-]
 25319IRIDIUM 69 [-]
 25320IRIDIUM 71 [-]
 25342IRIDIUM 70 [+]
 25344IRIDIUM 73 [-]
-25432IRIDIUM 76 [B]
+25432IRIDIUM 76 [P]
 25467IRIDIUM 82 [-]
 25469IRIDIUM 80 [-]
 25527IRIDIUM 2 [-]
@@ -125,10 +125,14 @@ content="text/html; charset=iso-8859-1">
 
 <h1 align="center">Iridium Constellation Status</h1>
 
-<p align="center"><strong>** Updated 06 August 2018 **</strong></p>
+<p align="center"><strong>** Updated 09 August 2018 **</strong></p>
 
 <p align="left"><strong>Latest changes </strong>(see below for
 earlier changes):</p>
+
+<p align="left">(09 August 2018): Iridium 155 (43573, 2018-061E)
+has entered the operational constellation at Plane 5, Slot 10, a
+few seconds behind Iridium 83 (25531, 1998-066E).</p>
 
 <p align="left">(02 August 2018): <strong>The process of
 de-orbiting Iridium 66 (25289, 1998-021E) has started.</strong></p>
@@ -160,8 +164,8 @@ href="iridium33collision.htm">91</a>    <strong>121</strong>    <strong>118</str
                                                                                        <em>Note that Iridium 128 was migrated from Plane 3 to Plane 4.</em>
 Plane 4: <strong>119</strong>    <strong>122</strong>    <strong>128    107</strong>   <strong> 132</strong>    <strong>129</strong>    <strong>127</strong>    <strong>133 </strong>   <strong>125</strong>    <strong>136</strong>    <strong>139</strong>     (97) (61) (35) <em>
 </em>
-Plane 5:  50     56     52     53     <a href="iridium9and84.htm">84</a>     10     54    <strong>105</strong>    <strong>108</strong>     83     <a
-href="iridium16and86.htm">86</a>     (12) (<strong>154, 155, 156, 158, 159, 160, 163, 164, 165, 166</strong>)
+Plane 5:  50     56     52     53     <a href="iridium9and84.htm">84</a>     10     54    <strong>105</strong>    <strong>108</strong>  83/<strong>155</strong>    <a
+href="iridium16and86.htm">86</a>     (12) (<strong>154, 156, 158, 159, 160, 163, 164, 165, 166</strong>)
                                                                            <strong>           </strong><em> Note that Iridiums 108 and 105 were migrated from Plane 6 to Plane 5. </em>
 Plane 6: <strong>102    112    104    114    103    109    106</strong>    <strong>152</strong>    <strong>147</strong>    <strong>110</strong>    <strong>111</strong>     <strong>162  161</strong>  (15)<strong>
 </strong>                                                            </pre>
