@@ -31,7 +31,7 @@ my $ua = LWP::UserAgent->new(
 #    ssl_opts	=> { verify_hostname	=> 0 },	# Necessary until Perl recognizes McCants' cert.
 );
 
-my $asof = time_gm( 0, 0, 17, 16, 7, 2018 );
+my $asof = time_gm( 0, 0, 22, 17, 7, 2018 );
 
 foreach (
 	["T. S. Kelso's Iridium list",
@@ -124,41 +124,36 @@ content="text/html; charset=iso-8859-1">
 
 <h1 align="center">Iridium Constellation Status</h1>
 
-<p align="center"><strong>** Updated 16 August 2018 **</strong></p>
+<p align="center"><strong>** Updated 17 August 2018 **</strong></p>
 
 <p align="left"><strong>Latest changes </strong>(see below for
 earlier changes):</p>
 
-<p align="left">(15 August 2018): <strong>The process of
-de-orbiting Iridium 12 (24837, 1997-030B) has started.</strong></p>
-
-<p align="left">(13 August 2018): Iridium 160 (43569, 2018-061A)
-has entered the operational constellation at Plane 5, Slot 2, a
-few seconds behind Iridium 56 (25170, 1998-010B).</p>
-
-<p align="left">(12 August 2018): Iridium 158 (43571, 2018-061C)
-has entered the operational constellation at Plane 5, Slot 1, a
-few seconds behind Iridium 50 (25172, 1998-010D).</p>
-
-<p align="left">(12 August 2018): <strong>Iridium 80 (25469,
-1998-051C) decayed on 12 August 2018.</strong></p>
-
-<p align="left">(10 August 2018): Iridium 156 (43576, 2018-061H)
-has entered the operational constellation at Plane 5, Slot 11, a
-few seconds behind Iridium 86 (25528, 1998-066B).</p>
-
-<p align="left">(09 August 2018): <strong>The process of
-de-orbiting Iridium 76 (25432, 1998-048B) has started.</strong></p>
-
-<p align="left">(09 August 2018): Iridium 155 (43573, 2018-061E)
-has entered the operational constellation at Plane 5, Slot 10, a
-few seconds behind Iridium 83 (25531, 1998-066E).</p>
-
-<p align="left">(02 August 2018): <strong>The process of
-de-orbiting Iridium 66 (25289, 1998-021E) has started.</strong></p>
-
-<p align="left">(28 July 2018): <strong>Iridium 41 (25040,
-1997-069B) decayed on 28 July 2018.</strong></p>
+<p align="left">(16 August 2018): Iridium 159 (43578, 2018-061K)
+has entered the operational constellation at Plane 5, Slot 3, a
+few seconds behind Iridium 52 (25169, 1998-010A).<br>
+(15 August 2018): <strong>The process of de-orbiting Iridium 12
+(24837, 1997-030B) has started.</strong><br>
+(13 August 2018): Iridium 160 (43569, 2018-061A) has entered the
+operational constellation at Plane 5, Slot 2, a few seconds
+behind Iridium 56 (25170, 1998-010B).<br>
+(12 August 2018): Iridium 158 (43571, 2018-061C) has entered the
+operational constellation at Plane 5, Slot 1, a few seconds
+behind Iridium 50 (25172, 1998-010D).<br>
+(12 August 2018): <strong>Iridium 80 (25469, 1998-051C) decayed
+on 12 August 2018.<br>
+</strong>(10 August 2018): Iridium 156 (43576, 2018-061H) has
+entered the operational constellation at Plane 5, Slot 11, a few
+seconds behind Iridium 86 (25528, 1998-066B).<br>
+(09 August 2018): <strong>The process of de-orbiting Iridium 76
+(25432, 1998-048B) has started.<br>
+</strong>(09 August 2018): Iridium 155 (43573, 2018-061E) has
+entered the operational constellation at Plane 5, Slot 10, a few
+seconds behind Iridium 83 (25531, 1998-066E).<br>
+(02 August 2018): <strong>The process of de-orbiting Iridium 66
+(25289, 1998-021E) has started.<br>
+</strong>(28 July 2018): <strong>Iridium 41 (25040, 1997-069B)
+decayed on 28 July 2018.</strong></p>
 
 <p align="left">(25 July 2018): <strong>The seventh Iridium Next
 launch took place on 25 July 2018 and was directed towards
@@ -184,9 +179,9 @@ href="iridium33collision.htm">91</a>    <strong>121</strong>    <strong>118</str
                                                                                        <em>Note that Iridium 128 was migrated from Plane 3 to Plane 4.</em>
 Plane 4: <strong>119</strong>    <strong>122</strong>    <strong>128    107</strong>   <strong> 132</strong>    <strong>129</strong>    <strong>127</strong>    <strong>133 </strong>   <strong>125</strong>    <strong>136</strong>    <strong>139</strong>     (97) (61) (35) <em>
 </em>
-Plane 5:50/<strong>158</strong> 56/<strong>160</strong>   52     53     <a
+Plane 5:50/<strong>158</strong> 56/<strong>160</strong> 52/<strong>159</strong>  53     <a
 href="iridium9and84.htm">84</a>     10     54    <strong>105</strong>    <strong>108</strong>   83/<strong>155</strong> <a
-href="iridium16and86.htm">86</a>/<strong>156</strong>   (<strong>154, 159, 163, 164, 165, 166</strong>)
+href="iridium16and86.htm">86</a>/<strong>156</strong>   (<strong>154, 163, 164, 165, 166</strong>)
                                                                            <strong>           </strong><em> Note that Iridiums 108 and 105 were migrated from Plane 6 to Plane 5. </em>
 Plane 6: <strong>102    112    104    114    103    109    106</strong>    <strong>152</strong>    <strong>147</strong>    <strong>110</strong>    <strong>111</strong>     <strong>162  161</strong>  (15)<strong>
 </strong>                                                            </pre>
