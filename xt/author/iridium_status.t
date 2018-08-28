@@ -31,7 +31,7 @@ my $ua = LWP::UserAgent->new(
 #    ssl_opts	=> { verify_hostname	=> 0 },	# Necessary until Perl recognizes McCants' cert.
 );
 
-my $asof = time_gm( 0, 0, 1, 25, 7, 2018 );
+my $asof = time_gm( 0, 0, 22, 27, 7, 2018 );
 
 foreach (
 	["T. S. Kelso's Iridium list",
@@ -121,13 +121,14 @@ content="text/html; charset=iso-8859-1">
 
 <h1 align="center">Iridium Constellation Status</h1>
 
-<p align="center"><strong>** Updated 24 August 2018 **</strong></p>
+<p align="center"><strong>** Updated 27 August 2018 **</strong></p>
 
 <p align="left"><strong>Latest changes </strong>(see below for
 earlier changes):</p>
 
-<p align="left">(25 August 2018): Iridium 164 (43577, 2018-061J)
-will presumably remain as a spare for Plane 5.<br>
+<p align="left">(27 August 2018): Iridium 164 (43577, 2018-061J)
+has entered the operational constellation at Plane 5, Slot 8, a
+few seconds behind Iridium 105 (41921, 2017-003E)!<br>
 (24 August 2018): <strong>Iridium 98 (27451, 2002-031B) decayed
 on 24 August 2018.<br>
 </strong>(24 August 2018): Iridium 154 (43574, 2018-061F) has
@@ -203,7 +204,7 @@ href="iridium33collision.htm">91</a>    <strong>121</strong>    <strong>118</str
 Plane 4: <strong>119</strong>    <strong>122</strong>    <strong>128    107</strong>   <strong> 132</strong>    <strong>129</strong>    <strong>127</strong>    <strong>133 </strong>   <strong>125</strong>    <strong>136</strong>    <strong>139</strong>     (97) (61) (35) <em>
 </em>
 Plane 5:50/<strong>158</strong>  <strong>160</strong>   52/<strong>159</strong> 53/<strong>163</strong> <a
-href="iridium9and84.htm">84</a>/<strong>165</strong> 10/<strong>166</strong> 54/<strong>154</strong>  <strong>105</strong>    <strong>108</strong>   83/<strong>155</strong>  <strong>156</strong>     <strong>164</strong>
+href="iridium9and84.htm">84</a>/<strong>165</strong> 10/<strong>166</strong> 54/<strong>154</strong> <strong>105/164</strong> <strong>108</strong>   83/<strong>155</strong>  <strong>156</strong>     
                                                                            <strong>           </strong><em> Note that Iridiums 108 and 105 were migrated from Plane 6 to Plane 5. </em>
 Plane 6: <strong>102    112    104    114    103    109    106</strong>    <strong>152</strong>    <strong>147</strong>    <strong>110</strong>    <strong>111</strong>     <strong>162  161</strong>  (15)<strong>
 </strong>                                                            </pre>
