@@ -1,3 +1,14 @@
+0.108_03	2018-10-15	T. R. Wyant
+    Canned status update:
+
+    - Iridium 15 decayed
+
+    This is an unusual status update because while both Kelso and Sladen
+    have dropped Iridium 15, Space Track says it is still in orbit. For
+    the moment I am carrying it as decayed, but depending on what
+    happens in the next couple days, the production release of this code
+    may have it back to tumbling.
+
 0.108_02	2018-10-13	T. R. Wyant
     Canned status update:
 
