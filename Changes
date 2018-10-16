@@ -1,3 +1,13 @@
+0.108_04	2018-10-16	T. R. Wyant
+    Canned status update:
+
+    - Iridium 52 spare (partial failure)
+
+    Space Track dropped Iridium 15 retroactively to 2018-10-14.
+
+    This requires updates to the canned status tables in both
+    Astro::SpaceTrack and Astro::Coord::ECI::TLE::Iridium.
+
 0.108_03	2018-10-15	T. R. Wyant
     Canned status update:
 
