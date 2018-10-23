@@ -31,7 +31,7 @@ my $ua = LWP::UserAgent->new(
 #    ssl_opts	=> { verify_hostname	=> 0 },	# Necessary until Perl recognizes McCants' cert.
 );
 
-my $asof = time_gm( 0, 0, 21, 20, 9, 2018 );
+my $asof = time_gm( 0, 0, 10, 23, 9, 2018 );
 
 foreach (
 	["T. S. Kelso's Iridium list",
@@ -110,13 +110,17 @@ content="text/html; charset=iso-8859-1">
 
 <h1 align="center">Iridium Constellation Status</h1>
 
-<p align="center"><strong>** Updated 20 October 2018 **</strong></p>
+<p align="center"><strong>** Updated 23 October 2018 **</strong></p>
 
 <p align="left"><strong>Latest changes </strong>(see below for
 earlier changes):</p>
 
-<p align="left">(19 October 2018): <strong>The process of
-de-orbiting Iridium 62 (25285, 1998-021A) has started.<br>
+<p align="left">(22 October 2018):<strong>Iridium 11 (25578,
+1998-074B) decayed on 22 October 2018.<br>
+</strong>(22 October 2018):<strong>Iridium 20 (25577, 1998-074A)
+decayed on 22 October 2018.<br>
+</strong>(19 October 2018): <strong>The process of de-orbiting
+Iridium 62 (25285, 1998-021A) has started.<br>
 </strong>(17 October 2018): <strong>The process of de-orbiting
 Iridium 52 (25169, 1998-010A) has started.<br>
 </strong>(14 October 2018): <strong>Iridium 15 (24869, 1997-034A)
@@ -258,7 +262,7 @@ Plane 6: <strong>102    112    104    114    103    109    106</strong>    <stro
 Orbital                     (but still in orbit)                                   (decayed)
 Plane                                	          <em>     </em>
 Plane 1:  73t  63   62                                                    74d  72d  21d  68d  67d  75d  65d  66d  70d      (Iridium 74 deliberately de-orbited. It was probably already a partial failure. Iridium 72, Iridium 21, Iridium 68, Iridium 67, Iridium 75, Iridium 65, Iridium 66, Iridium 70 and Iridium 62 deliberately de-orbited.)
-Plane 2:  69t  24t  71t  <a href="iridium11and26.htm">26</a>   22   46   11   20                           48d   3d  49d  23d  94d  25d  76d  47d           (Iridium 48, Iridium 3, Iridium 49, Iridium 46, Iridium 23, Iridium 94, Iridium 25, Iridium 47, Iridium 11 and Iridium 20 deliberately de-orbited.)
+Plane 2:  69t  24t  71t  <a href="iridium11and26.htm">26</a>   22   46                                     48d   3d  49d  23d  94d  25d  76d  47d  20d  11d (Iridium 48, Iridium 3, Iridium 49, Iridium 46, Iridium 23, Iridium 94, Iridium 25, Iridium 47, Iridium 11 and Iridium 20 deliberately de-orbited.)
 Plane 3:  <a href="iridium28and95.htm">28</a>   29<font
 color="#FF0000">   </font><a href="iridium33collision.htm"><font
 color="#FF0000">33</font></a>t  57           		                          27d  30d                                         (Iridium 30 deliberately de-orbited.)
