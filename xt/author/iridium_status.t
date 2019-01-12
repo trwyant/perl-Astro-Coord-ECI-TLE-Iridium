@@ -31,7 +31,7 @@ my $ua = LWP::UserAgent->new(
 #    ssl_opts	=> { verify_hostname	=> 0 },	# Necessary until Perl recognizes McCants' cert.
 );
 
-my $asof = time_gm( 0, 0, 23, 31, 11, 2018 );
+my $asof = time_gm( 0, 0, 11, 12, 0, 2019 );
 
 foreach (
 	["T. S. Kelso's Iridium list",
@@ -103,33 +103,30 @@ content="text/html; charset=iso-8859-1">
 
 <h1 align="center">Iridium Constellation Status</h1>
 
-<p align="center"><strong>** Updated 31 December 2018 **</strong></p>
+<p align="center"><strong>** Updated 12 January 2019 **</strong></p>
 
 <p align="left"><strong>Latest changes </strong>(see below for
 earlier changes):</p>
 
-<p align="left">(28 Dcember 2018): <strong>Iridium 124 (42810,
-2017-039H) has completed migration from Orbital plane 3 to
-Orbital Plane 1, and its orbit is being raised. It will
-presumably be a spare for Orbital Plane 1.</strong></p>
-
-<p align="left">(26 December 2018): <strong>Iridium 35 (24966,
-1997-056B) decayed on 26 December 2018.<br>
-</strong>(20 December 2018): <strong>Iridium 31 (24950,
-1997-051G) decayed on 20 December 2018.<br>
-</strong>(06 December 2018): <strong>The process of de-orbiting
-Iridium 35 (24966, 1997-056B) has started.<br>
-</strong>(30 November 2018): <strong>The process of de-orbiting
-Iridium 31 (24950, 1997-051G) has started.</strong></p>
+<p align="left"><strong>The eighth Iridium Next launch took place
+on 11 January 2019 and was directed towards orbital plane 3. This
+included Iridiums 167, 168, 169, 170, 171, 172, 173, 175, 176 and
+180.<br>
+Some of the satellites will be used to complete orbital plane 3,
+while others will be moved to become spares for adjacent orbital
+planes.</strong></p>
 
 <p align="left"><strong>Summary of current Iridium constellation
 status:</strong></p>
 
 <p align="left"><strong>Iridium Next: <br>
-</strong>65 satellites have so far been launched. All Orbital
-Planes are now complete except Orbital Plane 3. The remaining
-planned launch should complete Orbital Plane 3 and provide spares
-for Planes 2, 3 and 4.</p>
+</strong>75 satellites have so far been launched. All orbital
+planes except orbital plane 3 are already complete. Orbital Plane
+3 should be completed in the next few weeks with satellites from
+the latest launch.<br>
+6 further satellites (Iridiums 101, 174, 177, 178, 179 and 181)
+remain as on ground spares. No plans for launch have been
+announced.</p>
 
 <p align="left"><strong>Original Iridium:<br>
 </strong>A total of 95 satellites were launched:<br>
@@ -159,9 +156,9 @@ Plane
 Plane 1: <strong>145</strong>    <strong>143</strong>    <strong>140</strong>    <strong>148</strong>    <strong>150</strong>    <strong>153</strong>    <strong>144</strong>    <strong>149</strong>    <strong>146</strong>    <strong>142</strong>    <strong>157</strong> <strong>    124  </strong>(14)      (64) <em>Note that Iridium 153 was migrated from Plane 2 to Plane 1.</em><strong> </strong>
                                                                              <strong>          </strong><em><strong>                    Note that Iridium 124 was migrated from Plane 3 to Plane 1</strong></em><em>.</em>
 Plane 2: <strong>134</strong>    <strong>141</strong>    <strong>137   </strong> <strong>116</strong>    <strong>135</strong>    <strong>151</strong>    <strong>120</strong>    <strong>113</strong>    <strong>138</strong>    <strong>130</strong> <strong>   131</strong>     <strong>115</strong>
-                                                                          <strong>             </strong><em>Note that Iridiums 113 and 120 were migrated from Plane 3 to Plane 2.</em> <em>Iridium 115 was migrated from Plane 3 to Plane 2</em>
+                                                                          <strong>             </strong><em>Note that Iridiums 113 and 120 were migrated from Plane 3 to Plane 2.</em> <em>Iridium 115 was also migrated from Plane 3 to Plane 2</em>
 Plane 3: <strong>117</strong>     <a href="iridium28and95.htm">95</a>     45    <strong>123</strong>    <strong>126</strong>     32     <a
-href="iridium33collision.htm">91</a>    <strong>121</strong>    <strong>118</strong>     59     60  <strong> </strong>  (55) (58)
+href="iridium33collision.htm">91</a>    <strong>121</strong>    <strong>118</strong>     59     60  <strong> </strong>  (55) (58)  <strong>(167, 168, 169, 170, 171, 172, 173, 175, 176, 180)</strong>
                                                                                        <em>Note that Iridium 128 was migrated from Plane 3 to Plane 4.</em>
 Plane 4: <strong>119</strong>    <strong>122</strong>    <strong>128    107</strong>   <strong> 132</strong>    <strong>129</strong>    <strong>127</strong>    <strong>133 </strong>   <strong>125</strong>    <strong>136</strong>    <strong>139</strong>     (97) (61)<em>
 </em>
@@ -245,6 +242,20 @@ which are the catalog number and launch identifier which
 originally belonged to (the second) Iridium 11. </p>
 
 <p><a name="Recent changes"><strong>Recent changes</strong></a>: </p>
+
+<p align="left">(28 December 2018): <strong>Iridium 124 (42810,
+2017-039H) completed migration from Orbital plane 3 to Orbital
+Plane 1, and its orbit was raised. It will presumably be a spare
+for Orbital Plane 1.</strong></p>
+
+<p align="left">(26 December 2018): <strong>Iridium 35 (24966,
+1997-056B) decayed on 26 December 2018.<br>
+</strong>(20 December 2018): <strong>Iridium 31 (24950,
+1997-051G) decayed on 20 December 2018.<br>
+</strong>(06 December 2018): <strong>The process of de-orbiting
+Iridium 35 (24966, 1997-056B) has started.<br>
+</strong>(30 November 2018): <strong>The process of de-orbiting
+Iridium 31 (24950, 1997-051G) has started.</strong></p>
 
 <p align="left">(07 November 2018): <strong>Iridium 62 (25285,
 1998-021A) decayed on 07 November 2018.<br>
