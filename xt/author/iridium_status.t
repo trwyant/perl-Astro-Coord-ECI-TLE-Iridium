@@ -31,7 +31,7 @@ my $ua = LWP::UserAgent->new(
 #    ssl_opts	=> { verify_hostname	=> 0 },	# Necessary until Perl recognizes McCants' cert.
 );
 
-my $asof = time_gm( 0, 0, 11, 12, 0, 2019 );
+my $asof = time_gm( 0, 0, 12, 15, 0, 2019 );
 
 foreach (
 	["T. S. Kelso's Iridium list",
@@ -103,10 +103,14 @@ content="text/html; charset=iso-8859-1">
 
 <h1 align="center">Iridium Constellation Status</h1>
 
-<p align="center"><strong>** Updated 12 January 2019 **</strong></p>
+<p align="center"><strong>** Updated 15 January 2019 **</strong></p>
 
 <p align="left"><strong>Latest changes </strong>(see below for
 earlier changes):</p>
+
+<p align="left">(14 January 2019): Iridium 167 (43931, 2019-002K)
+is having its orbit raised. Iridium 171 (43929, 2019-002H)
+appears to be next in line.</p>
 
 <p align="left"><strong>The eighth Iridium Next launch took place
 on 11 January 2019 and was directed towards orbital plane 3. This
