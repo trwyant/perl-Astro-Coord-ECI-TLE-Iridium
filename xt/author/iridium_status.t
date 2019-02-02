@@ -31,7 +31,7 @@ my $ua = LWP::UserAgent->new(
 #    ssl_opts	=> { verify_hostname	=> 0 },	# Necessary until Perl recognizes McCants' cert.
 );
 
-my $asof = time_gm( 0, 0, 11, 30, 0, 2019 );
+my $asof = time_gm( 0, 0, 19, 31, 0, 2019 );
 
 foreach (
 	["T. S. Kelso's Iridium list",
@@ -101,24 +101,27 @@ content="text/html; charset=iso-8859-1">
 
 <h1 align="center">Iridium Constellation Status</h1>
 
-<p align="center"><strong>** Updated 30 January 2019 **</strong></p>
+<p align="center"><strong>** Updated 31 January 2019 **</strong></p>
 
 <p align="left"><strong>Latest changes </strong>(see below for
 earlier changes):</p>
 
-<p align="left">(29 January 2019): Iridium 173 (43925, 2019-002D)
-has entered the operational constellation at Plane 3, Slot 11, a
-few seconds behind Iridium 60 (25271998-019E).<br>
+<p align="left">(31 January 2019): Iridium 168 (43924, 2019-002C)
+has entered the operational constellation at Plane 3, Slot 2, a
+few seconds behind Iridium 95 (27375, 2002-005D).<br>
+(29 January 2019): Iridium 173 (43925, 2019-002D) has entered the
+operational constellation at Plane 3, Slot 11, a few seconds
+behind Iridium 60 (25276, 1998-019E).<br>
 (26 January 2019): Iridium 171 (43929, 2019-002H) has entered the
 operational constellation at Plane 3, Slot 7, a few seconds
 behind Iridium 91 (27372, 2005-005A).<br>
 (24 January 2019): Iridium 167 (43931, 2019-002K) has entered the
 operational constellation at Plane 3, Slot 6, a few seconds
 behind Iridium 32 (24945, 1997-051B).<br>
-Iridium 168 (43924, 2019-002C) appears to be next in line.
 Iridiums 172 and 180 also also being raised towards the
-operational orbit. Iridium 175 has also had its orbit raised.<br>
-Iridiums 169, 176, and 180 remain in the insertion orbit.</p>
+operational orbit. Iridium 175 and 176 have also had their orbits
+raised.<br>
+Iridiums 169 and 170 remain in the insertion orbit.</p>
 
 <p align="left">(23 January 2019): <strong>Iridium 90 (27373,
 2002-005B) decayed on 23 January 2019.</strong></p>
@@ -172,8 +175,8 @@ Plane 1: <strong>145</strong>    <strong>143</strong>    <strong>140</strong>   
                                                                              <strong>          </strong><em><strong>                    Note that Iridium 124 was migrated from Plane 3 to Plane 1</strong></em><em>.</em>
 Plane 2: <strong>134</strong>    <strong>141</strong>    <strong>137   </strong> <strong>116</strong>    <strong>135</strong>    <strong>151</strong>    <strong>120</strong>    <strong>113</strong>    <strong>138</strong>    <strong>130</strong> <strong>   131</strong>     <strong>115</strong>
                                                                           <strong>             </strong><em>Note that Iridiums 113 and 120 were migrated from Plane 3 to Plane 2.</em> <em>Iridium 115 was also migrated from Plane 3 to Plane 2</em>
-Plane 3: <strong>117</strong>     <a href="iridium28and95.htm">95</a>     45    <strong>123</strong>    <strong>126</strong>   32/<strong>167</strong> <a
-href="iridium33collision.htm">91</a>/<strong>171</strong>  <strong>121</strong>    <strong>118</strong>     59   60/<strong>173</strong>   (55) (58)  <strong>(168, 169, 170, 172, 175, 176, 180)</strong>
+Plane 3: <strong>117</strong>   <a href="iridium28and95.htm">95</a>/<strong>168</strong>   45    <strong>123</strong>    <strong>126</strong>   32/<strong>167</strong> <a
+href="iridium33collision.htm">91</a>/<strong>171</strong>  <strong>121</strong>    <strong>118</strong>     59   60/<strong>173</strong>   (55) (58)  <strong>(169, 170, 172, 175, 176, 180)</strong>
                                                                                        <em>Note that Iridium 128 was migrated from Plane 3 to Plane 4.</em>
 Plane 4: <strong>119</strong>    <strong>122</strong>    <strong>128    107</strong>   <strong> 132</strong>    <strong>129</strong>    <strong>127</strong>    <strong>133 </strong>   <strong>125</strong>    <strong>136</strong>    <strong>139</strong>     (97) (61)<em>
 </em>
