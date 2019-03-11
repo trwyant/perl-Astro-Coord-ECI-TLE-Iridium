@@ -1,36 +1,12 @@
-0.116_06	2019-03-08	T. R. Wyant
+0.117		2019-03-11	T. R. Wyant
     Canned status update:
 
     - Iridium 14 failed
-    - Iridium 95 spare (partial failure)
-
-0.116_05	2019-03-06	T. R. Wyant
-    Canned status update:
-
-    - Iridium 60 failed
-
-0.116_04	2019-03-03	T. R. Wyant
-    Canned status update:
-
-    - Iridium 59 failed
-    - Iridium 60 spare (partial failure)
-
-0.116_03	2019-02-27	T. R. Wyant
-    Canned status update:
-
-    - Iridium 14 spare (partial failure)
-
-0.116_02	2019-02-22	T. R. Wyant
-    Canned status update:
-
-    - Iridium 59 spare (partial failure)
-    - Iridium 91 failed
-
-0.116_01	2019-02-15	T. R. Wyant
-    Canned status update:
-
     - Iridium 32 failed
-    - Iridium 91 spare (partial failure)
+    - Iridium 59 failed
+    - Iridium 60 failed
+    - Iridium 91 failed
+    - Iridium 95 spare (partial failure)
 
 0.116		2019-02-12	T. R. Wyant
     Canned status update:
