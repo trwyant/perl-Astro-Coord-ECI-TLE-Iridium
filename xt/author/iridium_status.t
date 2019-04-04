@@ -31,7 +31,7 @@ my $ua = LWP::UserAgent->new(
 #    ssl_opts	=> { verify_hostname	=> 0 },	# Necessary until Perl recognizes McCants' cert.
 );
 
-my $asof = time_gm( 0, 0, 10, 1, 3, 2019 );
+my $asof = time_gm( 0, 0, 10, 4, 3, 2019 );
 
 foreach (
 	["T. S. Kelso's Iridium list",
@@ -95,13 +95,15 @@ content="text/html; charset=iso-8859-1">
 
 <h1 align="center">Iridium Constellation Status</h1>
 
-<p align="center"><strong>** Updated 31 March 2019 **</strong></p>
+<p align="center"><strong>** Updated 04 April 2019 **</strong></p>
 
 <p align="left"><strong>Latest changes </strong>(see below for
 earlier changes):</p>
 
-<p align="left">(31 March 2019): <strong>Iridium 55 (25272,
-1998-019A) decayed on 31 March 2019.<br>
+<p align="left">(01 April 2019): <strong>Iridium 64 (25287,
+1998-021C) decayed on 01 April 2019.<br>
+</strong>(31 March 2019): <strong>Iridium 55 (25272, 1998-019A)
+decayed on 31 March 2019.<br>
 </strong>(28 March 2019): <strong>The process of de-orbiting
 Iridium 45 (25104, 1997-082A) has started.<br>
 </strong>(25 March 2019): <strong>Iridium 95 (27375, 2005-005D)
@@ -194,7 +196,7 @@ announced.</p>
 61 are likely to remain as spares in plane 4 until Iridium 169
 completes its migration from plane 3.<br>
 - 62 satellites have been de-orbited (retired) following
-replacement by Iridium Next in 2017, 2018 and 2019. 54 out of
+replacement by Iridium Next in 2017, 2018 and 2019. 55 out of
 these have so far re-entered (decayed). The rest are likely to
 decay in the next few months.<br>
 - 25 satellites failed on-orbit and can no longer be controlled.
@@ -230,7 +232,7 @@ Plane 6: <strong>102    112    104    114    103    109    106</strong>    <stro
 <pre>Original &lt;----------- Failed ------------&gt;   &lt;------ Retired -------&gt;     &lt;-------------------- Failed or retired ---------------------&gt;  <em>Note that some of the failed</em> <em>satellites have drifted from the original orbital planes</em>
 Orbital          (but still in orbit)           (still in orbit)                                   (decayed)
 Plane                                	          <em>     </em>
-Plane 1:  73t  63                            64                           74d  72d  21d  68d  67d  75d  65d  66d  70d  62d  14d           (Iridium 74 deliberately de-orbited. It was probably already a partial failure. Iridium 72, Iridium 21, Iridium 68, Iridium 67, Iridium 75, Iridium 65, Iridium 66, Iridium 70, Iridium 62, Iridium 14 and Iridium 64 deliberately de-orbited.)
+Plane 1:  73t  63                                                         74d  72d  21d  68d  67d  75d  65d  66d  70d  62d  14d  64d      (Iridium 74 deliberately de-orbited. It was probably already a partial failure. Iridium 72, Iridium 21, Iridium 68, Iridium 67, Iridium 75, Iridium 65, Iridium 66, Iridium 70, Iridium 62, Iridium 14 and Iridium 64 deliberately de-orbited.)
 Plane 2:  69t  24t  71t  <a href="iridium11and26.htm">26</a>   22             46                           48d   3d  49d  23d  94d  25d  76d  47d  20d  11d                (Iridium 48, Iridium 3, Iridium 49, Iridium 46, Iridium 23, Iridium 94, Iridium 25, Iridium 47, Iridium 11 and Iridium 20 deliberately de-orbited.)
 Plane 3:  <a href="iridium28and95.htm">28</a>   29<font
 color="#FF0000">   </font><a href="iridium33collision.htm"><font
