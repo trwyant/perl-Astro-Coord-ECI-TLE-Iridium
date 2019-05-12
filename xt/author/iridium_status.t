@@ -5,6 +5,7 @@ use warnings;
 
 use POSIX qw{strftime};
 use Test::More 0.88;
+use Astro::Coord::ECI::TLE::Iridium;
 use Astro::Coord::ECI::Utils qw{ time_gm };
 
 eval {
@@ -31,7 +32,7 @@ my $ua = LWP::UserAgent->new(
 #    ssl_opts	=> { verify_hostname	=> 0 },	# Necessary until Perl recognizes McCants' cert.
 );
 
-my $asof = time_gm( 0, 0, 19, 28, 3, 2019 );
+my $asof = time_gm( Astro::Coord::ECI::TLE::Iridium->__iridium_status_as_of() );
 
 foreach (
 	["T. S. Kelso's Iridium list",
@@ -48,7 +49,6 @@ foreach (
 24871IRIDIUM 920 [-]
 24873IRIDIUM 921 [-]
 24903IRIDIUM 26 [-]
-24905IRIDIUM 46 [-]
 24907IRIDIUM 22 [-]
 24925DUMMY MASS 1 [-]
 24926DUMMY MASS 2 [-]
@@ -62,7 +62,6 @@ foreach (
 25078IRIDIUM 44 [-]
 25104IRIDIUM 45 [-]
 25105IRIDIUM 24 [-]
-25171IRIDIUM 54 [-]
 25262IRIDIUM 51 [-]
 25263IRIDIUM 61 [B]
 25273IRIDIUM 57 [-]
@@ -1339,7 +1338,7 @@ SLADEN
 
 	defined $got or $got = 'undef';
 	$dt ||= 0;
-        cmp_ok $dt, '<', $expect, "$what last modified before @{[
+        cmp_ok $dt, '<=', $expect, "$what last modified before @{[
 		strftime( TFMT, gmtime $expect ) ]}"
 	    or diag "$what actually modified @{[
 		strftime( TFMT, gmtime $dt )]}";
