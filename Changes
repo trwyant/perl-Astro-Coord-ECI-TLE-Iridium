@@ -1,3 +1,7 @@
+0.122_01	2019-06-28	T. R. Wyant
+    Kelso marks Iridium 61 failed. Canned status change in
+    Astro::Coord::ECI::TLE::Iridium.
+
 0.122		2019-05-19	T. R. Wyant
     Canned status update:
 
