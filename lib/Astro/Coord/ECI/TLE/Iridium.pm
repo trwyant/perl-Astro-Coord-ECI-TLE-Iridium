@@ -427,7 +427,8 @@ is taken into account, as is atmospheric extinction. Non-specular
 flares are calculated by a fairly arbitrary equation whose coefficients
 were fitted to visual flare magnitude estimates collected by Ron Lee
 and made available on the Web by Randy John as part of his skysat
-web site at L<http://home.comcast.net/~skysat/>. Atmospheric extinction
+web site at C<http://home.comcast.net/~skysat/> (missing; see
+L<ACKNOWLEDGMENTS|/ACKNOWLEDGMENTS>). Atmospheric extinction
 is also taken into account for the non-specular flares.
 
 Atmospheric extinction is calculated according to the article by Daniel
@@ -463,10 +464,10 @@ CelesTrak (L<http://celestrak.com/SpaceTrack/query/iridium.txt>), since
 it represents one-stop shopping, and Dr. Kelso has expressed the intent
 to check with Iridium Satellite LLC monthly for status. Mike McCants'
 "Status of Iridium Payloads" at
-L<http://users2.ev1.net/~mmccants/tles/iridium.html> notes that flares
-may be unreliable for spares, so can_flare () returns false for them. If
-this is not what you want, call can_flare with a true value (e.g.
-can_flare(1)).
+C<http://users2.ev1.net/~mmccants/tles/iridium.html> (no longer
+maintained) noted that flares may be unreliable for spares, so can_flare
+() returns false for them. If this is not what you want, call can_flare
+with a true value (e.g. C<can_flare( 1 )>).
 
 Fourth, the Heavens Above definition of 'daytime' differs from mine.
 Heavens Above does not document what their definition is, at least
@@ -1928,11 +1929,14 @@ whose work this module would never have existed:
 Ron Lee and the members of his team who collected Iridium magnitude
 data.
 
-Randy John, the author of SKYSAT (L<http://home.comcast.net/~skysat/>),
+Randy John, the author of SKYSAT (C<http://home.comcast.net/~skysat/>),
 whose Turbo Pascal implementation of the geometry calculation (at
-L<http://home.comcast.net/~skysat/algo.txt> provided the basic mechanism
+C<http://home.comcast.net/~skysat/algo.txt> provided the basic mechanism
 for my own geometry calculation, and who made Ron Lee's data available
-on the SKYSAT web site.
+on the SKYSAT web site. Unfortunately Comcast has long since stopped
+providing personal pages, and I have found nothing more recent. The
+most-recent capture of this by the Internet Archive's Wayback Machine is
+September 19 2015.
 
 The contributors to the Visual Satellite Observer's Home Page
 (L<http://www.satobs.org/satintro.html>), particularly the
