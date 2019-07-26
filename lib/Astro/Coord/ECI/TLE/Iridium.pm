@@ -1688,7 +1688,8 @@ sub _set_operational_status {
 # The following static method is UNSUPPORTED, and exists solely for the
 # benefit of xt/author/iridium_status.t. It may be modified or revoked
 # at any time.
-sub __iridium_status_as_of { return( qw{ 47 30 22 23 6 2019 } ) }
+# Time hand-updated for Sladen.
+sub __iridium_status_as_of { return( qw{ 39 5 11 25 6 2019 } ) }
 
 __PACKAGE__->status( clear => 'iridium' );
 __PACKAGE__->status( add => 24792, iridium => 'D', 'Iridium 8', 'Decayed 2017-11-24' );
