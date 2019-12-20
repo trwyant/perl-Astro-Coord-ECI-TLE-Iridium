@@ -1,3 +1,8 @@
+0.124_01	2019-12-20	T. R. Wyant
+    Kelso marks Iridium 97 failed. Canned status change in
+    Astro::Coord::ECI::TLE::Iridium. Iridium flares now belong to
+    history.
+
 0.124		2019-08-05	T. R. Wyant
     Canned status update:
 
