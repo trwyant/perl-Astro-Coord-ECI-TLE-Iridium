@@ -32,8 +32,8 @@ my $ua = LWP::UserAgent->new(
 #    ssl_opts	=> { verify_hostname	=> 0 },	# Necessary until Perl recognizes McCants' cert.
 );
 
-my $asof = time_gm( Astro::Coord::ECI::TLE::Iridium->__iridium_status_as_of() );
-# my $asof = time_gm( 0, 0, 14, 12, 11, 2019 );
+# my $asof = time_gm( Astro::Coord::ECI::TLE::Iridium->__iridium_status_as_of() );
+my $asof = time_gm( 0, 0, 11, 6, 5, 2020 );
 
 foreach (
 	["T. S. Kelso's Iridium list",
@@ -89,18 +89,13 @@ content="text/html; charset=iso-8859-1">
 
 <h1 align="center">Iridium Constellation Status</h1>
 
-<p align="center"><strong>** Updated 30 December 2019 **</strong></p>
+<p align="center"><strong>** Updated 06 June 2020 **</strong></p>
 
 <p align="left"><strong>Latest changes </strong>(see below for
 earlier changes):</p>
 
-<p align="left">(27 December 2019):<strong> Iridium 97 (27450,
-2002-031A) decayed on 27 December 2019.</strong><br>
-(05 December 2019): <strong>The process of de-orbiting Iridium 97
-(27450, 2002-031A) has started.<br>
-</strong>(mid November 2019): <strong>Iridium 169 (43926,
-2019-002E) has completed its migration from Plane 3 to Plane 4
-and is now the spare in Plane 4, replacing Iridium 97</strong></p>
+<p align="left">(30 May 2020):<strong> Iridium 96 (27376,
+2002-005E) decayed on 30 May 2020. </strong></p>
 
 <p align="left"><strong>Summary of current Iridium constellation
 status:</strong></p>
@@ -116,7 +111,7 @@ announced.</p>
 </strong>A total of 95 satellites were launched; none now remain
 operational.<br>
 - 65 satellites have been de-orbited (retired) following
-replacement by Iridium Next in 2017, 2018 and 2019. 60 out of
+replacement by Iridium Next in 2017, 2018 and 2019. 61 out of
 these have so far re-entered (decayed). It may be many months
 before the rest decay.<br>
 - 25 satellites failed on-orbit and can no longer be controlled.
@@ -159,7 +154,7 @@ color="#FF0000">   </font><a href="iridium33collision.htm"><font
 color="#FF0000">33</font></a>t  57                  45                   27d  30d  31d  32d  59d  <a
 href="iridium33collision.htm">91</a>d  60d  <a
 href="iridium28and95.htm">95</a>d  55d  58d                     (Iridium 30, Iridium 31, Iridium 32, Iridium 91, Iridium 59, Iridium 60, Iridium 95, Iridium 55, Iridium 58 and Iridium 45 deliberately de-orbited.)
-Plane 4:   4   <a href="iridium36and97.htm">36</a>t   7                       51    5   96          8d   6d  34d  19d  37d  35d  61d  97d                               (Iridium  8, Iridium 51, Iridium 5, Iridium 6, Iridium 19, Iridium 34, Iridium 96, Iridium 37, Iridium 35, Iridium 61 and Iridium 97 deliberately de-orbited. Iridium 7, Iridium 51 and Iridium 6 were probably already partial failures.)
+Plane 4:   4   <a href="iridium36and97.htm">36</a>t   7                       51    5               8d   6d  34d  19d  37d  35d  61d  97d  96d                          (Iridium  8, Iridium 51, Iridium 5, Iridium 6, Iridium 19, Iridium 34, Iridium 96, Iridium 37, Iridium 35, Iridium 61 and Iridium 97 deliberately de-orbited. Iridium 7, Iridium 51 and Iridium 6 were probably already partial failures.)
 Plane 5:   2t 914t 911t  <a href="iridium16and86.htm">16</a>t                                      85d   <a
 href="iridium9and84.htm">9</a>d  13d  12d  50d  53d  86d  10d  56d  52d  84d  83d  90d  54d (Iridium  9, Iridium 90, Iridium 13, Iridium 12, Iridium 86, Iridium 56, Iridium 50, Iridium 84, Iridium 53, Iridium 10, Iridium 83 and Iridium 52 deliberately de-orbited.) <em>Iridium 2 has drifted far from</em> <em>its original launch plane, and continues to drift</em>
 Plane 6: 920t 921t  44t  <a href="iridium38and82.htm">38</a>t  <a
@@ -225,6 +220,14 @@ which are the catalog number and launch identifier which
 originally belonged to (the second) Iridium 11. </p>
 
 <p><a name="Recent changes"><strong>Recent changes</strong></a>: </p>
+
+<p align="left">(27 December 2019):<strong> Iridium 97 (27450,
+2002-031A) decayed on 27 December 2019.</strong><br>
+(05 December 2019): <strong>The process of de-orbiting Iridium 97
+(27450, 2002-031A) has started.<br>
+</strong>(mid November 2019): <strong>Iridium 169 (43926,
+2019-002E) has completed its migration from Plane 3 to Plane 4
+and is now the spare in Plane 4, replacing Iridium 97</strong></p>
 
 <p align="left">(23 July 2019): <strong>Iridium 61 (25263,
 1998-018B) decayed on 23 July 2019.</strong><br>
