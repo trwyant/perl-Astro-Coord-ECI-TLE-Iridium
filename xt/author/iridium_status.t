@@ -32,8 +32,8 @@ my $ua = LWP::UserAgent->new(
 #    ssl_opts	=> { verify_hostname	=> 0 },	# Necessary until Perl recognizes McCants' cert.
 );
 
-# my $asof = time_gm( Astro::Coord::ECI::TLE::Iridium->__iridium_status_as_of() );
-my $asof = time_gm( 0, 0, 11, 6, 5, 2020 );
+my $asof = time_gm( Astro::Coord::ECI::TLE::Iridium->__iridium_status_as_of() );
+# my $asof = time_gm( 0, 0, 11, 6, 5, 2020 );
 
 foreach (
 	["T. S. Kelso's Iridium list",
@@ -89,7 +89,7 @@ content="text/html; charset=iso-8859-1">
 
 <h1 align="center">Iridium Constellation Status</h1>
 
-<p align="center"><strong>** Updated 06 June 2020 **</strong></p>
+<p align="center"><strong>** Updated 29 June 2020 **</strong></p>
 
 <p align="left"><strong>Latest changes </strong>(see below for
 earlier changes):</p>
@@ -103,9 +103,11 @@ status:</strong></p>
 <p align="left"><strong>Iridium Next: <br>
 </strong>75 satellites have so far been launched , and all
 orbital planes are now complete.<br>
-6 further satellites (Iridiums 101, 174, 177, 178, 179 and 181)
-remain as on ground spares. No plans for launch have been
-announced.</p>
+6 further satellites (Iridiums 174, 177, 178, 179, 181 and 182)
+remain as on ground spares.<br>
+On 24 June 2020, Relativity Space announced that it had signed a
+contract with Iridium for up to 6 launches of the on ground spare
+satellites as needed between 2023 and 2030.</p>
 
 <p align="left"><strong>Original Iridium:<br>
 </strong>A total of 95 satellites were launched; none now remain
