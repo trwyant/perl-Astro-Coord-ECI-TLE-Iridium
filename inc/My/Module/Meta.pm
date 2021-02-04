@@ -22,7 +22,10 @@ sub build_requires {
 	'Config'	=> 0,
 	'Data::Dumper'	=> 0,
 	'Exporter'	=> 5.64,
+	'Safe'		=> 0,
 	'Test::More'	=> 0.88,	# Because of done_testing().
+	'Time::Local'	=> 0,
+	lib		=> 0,
     };
 }
 
@@ -73,6 +76,7 @@ sub requires {
 ##  if ( ! $self->distribution() ) {
 ##  }
     return +{
+	'Astro::Coord::ECI'		=> 0.091,
 	'Astro::Coord::ECI::TLE'	=> 0.091,
 	'Astro::Coord::ECI::Utils'	=> 0.091,
 	'Carp'		=> 0,
