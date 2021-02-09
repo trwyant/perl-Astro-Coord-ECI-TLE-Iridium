@@ -4,7 +4,6 @@ use strict;
 use warnings;
 
 use Carp;
-use Config;
 use My::Module::Recommend::All qw{ __all };
 
 my @optionals = (

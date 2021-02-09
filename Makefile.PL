@@ -7,7 +7,6 @@ use lib qw{ inc };
 
 use My::Module::Meta;
 use My::Module::Recommend;
-use Config;
 use ExtUtils::MakeMaker qw{WriteMakefile prompt};
 use FileHandle;
 use Getopt::Std;
@@ -43,7 +42,6 @@ my %attr = (
     realclean => {FILES => join ' ', @clean_files},
     AUTHOR => 'Tom Wyant (wyant at cpan dot org)',
     ABSTRACT => 'Class to compute Iridium Classic flares',
-#   BINARY_LOCATION => "$Config{archname}$vers/Astro-satpass.tar.gz",
     realclean	=> { FILES => 'cover_db xt/author/optionals' },
 );
 

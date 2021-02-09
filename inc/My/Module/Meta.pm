@@ -19,8 +19,6 @@ sub new {
 
 sub build_requires {
     return +{
-	'Config'	=> 0,
-	'Data::Dumper'	=> 0,
 	'Exporter'	=> 5.64,
 	'Safe'		=> 0,
 	'Test::More'	=> 0.88,	# Because of done_testing().
@@ -81,11 +79,10 @@ sub requires {
 	'Astro::Coord::ECI::Utils'	=> 0.091,
 	'Carp'		=> 0,
 	'POSIX'		=> 0,
-	'Scalar::Util'	=> 0,
-	'base'		=> 0,
-	'constant'	=> 0,
-	'strict'	=> 0,
-	'warnings'	=> 0,
+	base		=> 0,
+	constant	=> 0,
+	strict		=> 0,
+	warnings	=> 0,
 	@extra,
     };
 }

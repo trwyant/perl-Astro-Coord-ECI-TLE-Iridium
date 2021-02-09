@@ -9,7 +9,6 @@ use My::Module::Build;
 use My::Module::Meta;
 use My::Module::Recommend;
 use Module::Build;
-use Config;
 use FileHandle;
 
 (my $mbv = Module::Build->VERSION) =~ s/_//g;
