@@ -18,6 +18,7 @@ META.json
 META.yml
 README
 README.MacOS
+SECURITY
 t/basic.t
 t/tle_flare.t
 t/tle_support.t
