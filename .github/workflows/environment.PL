@@ -90,7 +90,6 @@ sub want_modules {
     } else {
         return qw{
             SMUELLER/ExtUtils-ParseXS-3.30.tar.gz
-            PETDANCE/HTML-Tagset-3.20.tar.gz
             RRA/podlators-4.14.tar.gz
         };
     }
