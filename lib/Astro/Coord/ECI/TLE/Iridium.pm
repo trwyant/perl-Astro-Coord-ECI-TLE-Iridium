@@ -1887,12 +1887,11 @@ Iridium Flares page (L<http://www.satobs.org/iridium.html>),
 which provided the background for the entire Iridium flare
 effort.
 
-=head1 BUGS
+=head1 SUPPORT
 
 Support is by the author. Please file bug reports at
-L<https://rt.cpan.org/Public/Dist/Display.html?Name=Astro-Coord-ECI-TLE-Iridium>,
-L<https://github.com/trwyant/perl-Astro-Coord-ECI-TLE-Iridium/issues>, or in
-electronic mail to the author.
+L<https://github.com/trwyant/perl-Astro-Coord-ECI-TLE-Iridium/issues> or
+in electronic mail to the author.
 
 =head1 AUTHOR
 
