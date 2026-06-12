@@ -452,7 +452,8 @@ says are spares. I have skipped the spares by default because I do not
 know that their attitudes are maintained to the requisite precision,
 though perhaps they would be, to demonstrate that the spares are
 functional. This software currently uses the Iridium status from
-CelesTrak (L<http://celestrak.com/SpaceTrack/query/iridium.txt>), since
+CelesTrak (C<http://celestrak.com/SpaceTrack/query/iridium.txt>) (no
+longer extant), since
 it represents one-stop shopping, and Dr. Kelso has expressed the intent
 to check with Iridium Satellite LLC monthly for status. Mike McCants'
 "Status of Iridium Payloads" at
