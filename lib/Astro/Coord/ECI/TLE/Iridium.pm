@@ -173,7 +173,7 @@ foreach my $key (qw{am day extinction max_mirror_angle pm status zone}) {
     $mutator{$key} = sub {$_[0]->{&ATTRIBUTE_KEY}{$_[1]} = $_[2]};
 }
 
-my %accessor = ();
+my %accessor;
 foreach my $key (keys %mutator) {
     $accessor{$key} ||= sub {$_[0]->{&ATTRIBUTE_KEY}{$_[1]}}
 }
